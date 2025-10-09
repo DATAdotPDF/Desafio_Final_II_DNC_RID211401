@@ -160,6 +160,7 @@ reduzindo o tempo de análise manual e aumentando a confiabilidade das auditoria
 | **Guilherme Gabriel Souza** | [linkedin.com/in/guilhermegabsouza](https://www.linkedin.com/in/guilhermegabsouza) | [github.com/guigabz](https://github.com/guigabz) |
 | **Bernardo Rodrigues Abelo** | [linkedin.com/in/bernardo-abelo-56b760236](https://www.linkedin.com/in/bernardo-abelo-56b760236/) | [github.com/bernardoabelo](https://github.com/bernardoabelo) |
 | **Rodrigo Pires** | [linkedin.com/in/rodrigo-peres-ds](https://www.linkedin.com/in/rodrigo-peres-ds) | [github.com/engrperes](https://github.com/engrperes) |
+| **Max Matsuya** | [linkedin.com/in/max-mitsuya](https://www.linkedin.com/in/max-mitsuya) | [github.com/maxMitsuya)](https://github.com/maxMitsuya) |
 
 ---
 
