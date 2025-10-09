@@ -4,7 +4,7 @@
 
 # 🤖 IA Generativa para Detecção de Fraudes – DNC
 
-Projeto final do curso de Engenharia de Dados da DNC, desenvolvido no macOS, com foco em **detecção de padrões com IA**, **modelagem em grafos**, **API com FastAPI** e **visualização analítica com agente generativo**.
+Projeto final do curso de Engenharia de Dados da DNC, com foco em **detecção de padrões com IA**, **modelagem em grafos**, **API com FastAPI** e **visualização analítica com agente generativo**.
 
 ---
 
@@ -159,6 +159,7 @@ reduzindo o tempo de análise manual e aumentando a confiabilidade das auditoria
 | **Pedro Ferreira (.pdf)** | [linkedin.com/in/datadotpdf](https://www.linkedin.com/in/datadotpdf) | [github.com/DATAdotPDF](https://github.com/DATAdotPDF) |
 | **Guilherme Gabriel Souza** | [linkedin.com/in/guilhermegabsouza](https://www.linkedin.com/in/guilhermegabsouza) | [github.com/guigabz](https://github.com/guigabz) |
 | **Bernardo Rodrigues Abelo** | [linkedin.com/in/bernardo-abelo-56b760236](https://www.linkedin.com/in/bernardo-abelo-56b760236/) | [github.com/bernardoabelo](https://github.com/bernardoabelo) |
+| **Rodrigo Pires** | [linkedin.com/in/rodrigo-peres-ds](https://www.linkedin.com/in/rodrigo-peres-ds) | [github.com/engrperes](https://github.com/engrperes) |
 
 ---
 
