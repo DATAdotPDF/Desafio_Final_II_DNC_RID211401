@@ -147,6 +147,7 @@ reduzindo o tempo de análise manual e aumentando a confiabilidade das auditoria
 ---
 
 Desenvolvido por Pedro Ferreira – LinkedIn: https://www.linkedin.com/in/datadotpdf
-                 Guilherme Gabriel – LinkedIn https://www.linkedin.com/in/guilhermegabsouza/ 
-                                     Github https://github.com/guigabz
+                
+Guilherme Gabriel – LinkedIn https://www.linkedin.com/in/guilhermegabsouza/ 
+                     Github https://github.com/guigabz
 
