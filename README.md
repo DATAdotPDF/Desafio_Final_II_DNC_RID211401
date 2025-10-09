@@ -39,6 +39,7 @@ ia_generativa_dnc/
 ---
 
 ## ⚙️ Tecnologias Utilizadas
+
 - Python 3.11  
 - FastAPI – API analítica e backend do projeto  
 - NetworkX – Modelagem e análise de grafos  
@@ -78,6 +79,7 @@ Esses insights são retornados via API em linguagem natural por meio do agente g
 
 ## ✅ Como Executar Localmente
 
+```bash
 # Clone o repositório
 git clone https://github.com/DATAdotPDF/Desafio_Final_DNC_II.git
 cd ia_generativa_dnc
@@ -99,11 +101,13 @@ uvicorn api.main:app --reload
 # Acesse:
 # http://localhost:8000/docs
 # Você poderá testar o endpoint /construir_grafo enviando dados de exemplo.
+```
 
 ---
 
 ## ☁️ Execução com Docker
 
+```bash
 cd 05_docker
 
 # Inicialize o container
@@ -113,6 +117,7 @@ docker-compose up --build
 # http://localhost:8000
 
 # Os notebooks podem ser acessados via Jupyter local ou VSCode conectado ao container.
+```
 
 ---
 
@@ -122,29 +127,40 @@ docker-compose up --build
 - Conectores-Chave: operadores que conectam múltiplos fluxos  
 - Atividades Coordenadas: grupos de eventos com relações repetitivas  
 
-Esses resultados permitem identificar padrões suspeitos de forma automatizada,
+Esses resultados permitem identificar padrões suspeitos de forma automatizada,  
 reduzindo o tempo de análise manual e aumentando a confiabilidade das auditorias.
 
 ---
 
 ## 🔐 Confidencialidade e Segurança
 
-- Todos os dados foram anonimizados e pastas com senhas (em caso de necessidade de acesso entrar em contato) 
-- Variáveis sensíveis são armazenadas no arquivo .env (ignorado no Git).  
+- Todos os dados foram anonimizados e as pastas sensíveis estão protegidas por senha.  
+- O acesso pode ser solicitado diretamente à equipe responsável.  
+- Variáveis sensíveis são armazenadas no arquivo `.env` (ignorado no Git).  
 - O projeto segue práticas seguras de versionamento e controle de acesso.
 
 ---
 
 ## 📚 Referências & Links
 
-- Portifolio Pedro (Projeto): https://datapedutraferreir.wixsite.com/pdfdata/projects/desafio-final-ii---dnc
-- DNC Escola de Dados: https://www.escoladnc.com.br  
-- FastAPI Documentation: https://fastapi.tiangolo.com/  
-- NetworkX: https://networkx.org/documentation/stable/  
-- Docker: https://www.docker.com/  
-- Python: https://www.python.org/
+- **Portfólio Pedro (.pdf)** – [Projeto Oscar (DNC)](https://datapedutraferreir.wixsite.com/pdfdata/projects/desafio-final-ii---dnc)  
+- **DNC Escola de Dados:** [https://www.escoladnc.com.br](https://www.escoladnc.com.br)  
+- **FastAPI Documentation:** [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)  
+- **NetworkX:** [https://networkx.org/documentation/stable/](https://networkx.org/documentation/stable/)  
+- **Docker:** [https://www.docker.com/](https://www.docker.com/)  
+- **Python:** [https://www.python.org/](https://www.python.org/)
 
 ---
 
-Desenvolvido por Pedro Ferreira – LinkedIn: https://www.linkedin.com/in/datadotpdf
+## 👥 Equipe do Projeto
 
+| Nome | LinkedIn | GitHub |
+|------|-----------|--------|
+| **Pedro Ferreira (.pdf)** | [linkedin.com/in/datadotpdf](https://www.linkedin.com/in/datadotpdf) | [github.com/DATAdotPDF](https://github.com/DATAdotPDF) |
+| **Guilherme Gabriel Souza** | [linkedin.com/in/guilhermegabsouza](https://www.linkedin.com/in/guilhermegabsouza) | [github.com/guigabz](https://github.com/guigabz) |
+| **Bernardo Rodrigues Abelo** | [linkedin.com/in/bernardo-abelo-56b760236](https://www.linkedin.com/in/bernardo-abelo-56b760236/) | [github.com/bernardoabelo](https://github.com/bernardoabelo) |
+
+---
+
+> Projeto desenvolvido como entrega final do curso de **Engenharia de Dados – DNC School**,  
+> unindo **IA generativa, análise de grafos e automação de dados** em um pipeline integrado.
