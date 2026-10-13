@@ -1,160 +1,159 @@
 <p align="center">
- <img width="1584" height="396" alt="DESAFIO FINAL II ENG DADOS_BANNER" src="https://github.com/user-attachments/assets/13a8cf3d-0703-4ccb-997d-9c294927d387" />
+ <img width="1584" height="396" alt="Generative AI Data Engineering Final Project Banner" src="https://github.com/user-attachments/assets/13a8cf3d-0703-4ccb-997d-9c294927d387" />
 </p>
 
-# 🤖 IA Generativa para Detecção de Fraudes – DNC
+# 🤖 Generative AI for Fraud Detection – DNC
 
-Projeto final do curso de Engenharia de Dados da DNC, com foco em **detecção de padrões com IA**, **modelagem em grafos**, **API com FastAPI** e **visualização analítica com agente generativo**.
-
----
-
-## 📋 Descrição do Projeto
-
-Este projeto apresenta uma solução de **IA Generativa** voltada à análise automatizada de dados operacionais.  
-A aplicação identifica **fraudes, inconsistências e erros**, cruzando informações de múltiplas fontes (planilhas e CSVs) de forma dinâmica e explicável.  
-
-A modelagem é feita com **NetworkX**, que estrutura os dados como um grafo de entidades (usuários, lojas e produtos) conectadas por eventos.  
-Essas relações são analisadas por métricas de **centralidade**, **intermediação** e **similaridade** para detectar padrões suspeitos.  
-A API foi construída em **FastAPI**, integrando-se a um agente conversacional de IA capaz de responder perguntas sobre o comportamento dos dados.
+Final project for DNC's Data Engineering course, focused on **AI pattern detection**, **graph modeling**, **FastAPI**, and **analytical visualization with a generative agent**.
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📋 Project Description
+
+This project presents a **Generative AI** solution for automated operational data analysis.
+The application identifies **fraud, inconsistencies, and errors** by dynamically and explainably combining multiple sources, including spreadsheets and CSV files.
+
+**NetworkX** models the data as a graph of users, stores, and products connected by events.
+These relationships are analyzed through **centrality**, **betweenness**, and **similarity** metrics to detect suspicious patterns.
+The API was built with **FastAPI** and connects to a conversational AI agent that answers questions about data behavior.
+
+---
+
+## 📁 Project Structure
 
 ```bash
 ia_generativa_dnc/
-├── 00_documentos/       # Documentos de apoio e visuais
-├── 01_base_de_dados/    # Arquivos CSV originais e tratados
-├── 02_modelagem/        # Scripts de modelagem e criação de grafos
-├── 03_api/              # Código da API FastAPI e endpoints
-├── 04_agent/            # Integração com o agente de IA
-├── 05_docker/           # docker-compose e dependências
-├── data/                # Bases intermediárias (Bronze/Silver/Gold)
-├── notebooks/           # Prototipagem e análises exploratórias
-├── .env                 # Variáveis sensíveis (não versionadas)
-├── requirements.txt     # Dependências do projeto
-└── README.md            # Este arquivo
+├── 00_documentos/       # Supporting documents and visuals
+├── 01_base_de_dados/    # Original and processed CSV files
+├── 02_modelagem/        # Graph modeling and creation scripts
+├── 03_api/              # FastAPI code and endpoints
+├── 04_agent/            # AI agent integration
+├── 05_docker/           # docker-compose and dependencies
+├── data/                # Intermediate Bronze/Silver/Gold data
+├── notebooks/           # Prototyping and exploratory analysis
+├── .env                 # Sensitive variables, not versioned
+├── requirements.txt     # Project dependencies
+└── README.md            # This file
 ```
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## ⚙️ Technologies Used
 
-- Python 3.11  
-- FastAPI – API analítica e backend do projeto  
-- NetworkX – Modelagem e análise de grafos  
-- Pandas – Limpeza e transformação dos dados  
-- Jupyter Notebook – Prototipagem e análise exploratória  
-- Docker – Containerização do ambiente  
-- Git & GitHub – Versionamento e documentação  
-- macOS Sonoma (14.6)
-
----
-
-## 🧠 Lógica Analítica da IA
-
-A IA realiza cruzamentos automáticos entre diferentes fontes de dados para identificar padrões como:
-
-1. Trocas com mais saídas do que entradas  
-2. Produtos presentes simultaneamente em ajustes e trocas  
-3. Baixo percentual de vendas à vista comparado à média  
-4. Percentuais de trocas e cancelamentos acima do padrão  
-5. Movimentações suspeitas em curto intervalo de tempo  
-6. Clientes e produtos reincidentes em divergências  
-
-Esses insights são retornados via API em linguagem natural por meio do agente generativo.
+- Python 3.11
+- FastAPI – analytical API and project backend
+- NetworkX – graph modeling and analysis
+- Pandas – data cleaning and transformation
+- Jupyter Notebook – prototyping and exploratory analysis
+- Docker – environment containerization
+- Git and GitHub – version control and documentation
+- macOS Sonoma 14.6
 
 ---
 
-## 🧩 Etapas do Pipeline
+## 🧠 AI Analytical Logic
 
-1. Coleta dos Dados – Leitura de múltiplos arquivos CSV (ajustes, devoluções, cancelamentos e inventário).  
-2. Limpeza e Padronização – Conversão de tipos, remoção de nulos e normalização de colunas.  
-3. Integração e Enriquecimento – União das bases e criação de métricas derivadas.  
-4. Modelagem em Grafos – Criação das entidades e conexões entre eventos operacionais.  
-5. Cálculo de Métricas – Centralidade de Grau, Intermediação e Componentes Conectados.  
-6. Integração via API – Exposição dos resultados por meio da FastAPI.
+The AI automatically combines different data sources to identify patterns such as:
+
+1. Exchanges with more outgoing than incoming movements
+2. Products that appear in both adjustments and exchanges
+3. A low percentage of cash sales compared with the average
+4. Exchange and cancellation percentages above the expected pattern
+5. Suspicious movements within a short time interval
+6. Customers and products that repeatedly appear in discrepancies
+
+These insights are returned through the API in natural language by the generative agent.
 
 ---
 
-## ✅ Como Executar Localmente
+## 🧩 Pipeline Stages
+
+1. **Data collection:** read multiple CSV files for adjustments, returns, cancellations, and inventory.
+2. **Cleaning and standardization:** convert types, remove nulls, and normalize columns.
+3. **Integration and enrichment:** join datasets and create derived metrics.
+4. **Graph modeling:** create entities and connections between operational events.
+5. **Metric calculation:** compute degree centrality, betweenness, and connected components.
+6. **API integration:** expose results through FastAPI.
+
+---
+
+## ✅ Run Locally
 
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/DATAdotPDF/Desafio_Final_DNC_II.git
 cd ia_generativa_dnc
 
-# Crie o ambiente virtual
+# Create the virtual environment
 python3 -m venv venv
 source venv/bin/activate
 
-# Instale as dependências
+# Install dependencies
 pip install -r requirements.txt
 
-# Crie o arquivo .env com suas variáveis
-API_KEY=seu_token
+# Create the .env file with your variables
+API_KEY=your_token
 ENVIRONMENT=dev
 
-# Execute a API
+# Run the API
 uvicorn api.main:app --reload
 
-# Acesse:
+# Open:
 # http://localhost:8000/docs
-# Você poderá testar o endpoint /construir_grafo enviando dados de exemplo.
+# You can test the /construir_grafo endpoint with sample data.
 ```
 
 ---
 
-## ☁️ Execução com Docker
+## ☁️ Run with Docker
 
 ```bash
 cd 05_docker
 
-# Inicialize o container
+# Initialize the container
 docker-compose up --build
 
-# A API estará disponível em:
+# The API will be available at:
 # http://localhost:8000
 
-# Os notebooks podem ser acessados via Jupyter local ou VSCode conectado ao container.
+# Open notebooks through local Jupyter or VS Code connected to the container.
 ```
 
 ---
 
-## 📊 Resultados Obtidos
+## 📊 Results
 
-- Entidades Centrais: usuários e lojas com maior volume de eventos  
-- Conectores-Chave: operadores que conectam múltiplos fluxos  
-- Atividades Coordenadas: grupos de eventos com relações repetitivas  
+- **Central entities:** users and stores with the highest event volume
+- **Key connectors:** operators that connect multiple flows
+- **Coordinated activities:** event groups with repeated relationships
 
-Esses resultados permitem identificar padrões suspeitos de forma automatizada,  
-reduzindo o tempo de análise manual e aumentando a confiabilidade das auditorias.
-
----
-
-## 🔐 Confidencialidade e Segurança
-
-- Todos os dados foram anonimizados e as pastas sensíveis estão protegidas por senha.  
-- O acesso pode ser solicitado diretamente à equipe responsável.  
-- Variáveis sensíveis são armazenadas no arquivo `.env` (ignorado no Git).  
-- O projeto segue práticas seguras de versionamento e controle de acesso.
+These results help identify suspicious patterns automatically and reduce manual analysis time while improving audit reliability.
 
 ---
 
-## 📚 Referências & Links
+## 🔐 Confidentiality and Security
 
-- **Portfólio Pedro (.pdf)** – [Projeto Oscar (DNC)](https://datapedutraferreir.wixsite.com/pdfdata/projects/desafio-final-ii---dnc)  
-- **DNC Escola de Dados:** [https://www.escoladnc.com.br](https://www.escoladnc.com.br)  
-- **FastAPI Documentation:** [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)  
-- **NetworkX:** [https://networkx.org/documentation/stable/](https://networkx.org/documentation/stable/)  
-- **Docker:** [https://www.docker.com/](https://www.docker.com/)  
+- All data was anonymized, and sensitive folders are password protected.
+- Access can be requested from the responsible team.
+- Sensitive variables are stored in `.env`, which is ignored by Git.
+- The project follows secure version control and access control practices.
+
+---
+
+## 📚 References and Links
+
+- **Pedro's portfolio (PDF):** [Oscar Project (DNC)](https://datapedutraferreir.wixsite.com/pdfdata/projects/desafio-final-ii---dnc)
+- **DNC Data School:** [https://www.escoladnc.com.br](https://www.escoladnc.com.br)
+- **FastAPI documentation:** [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
+- **NetworkX:** [https://networkx.org/documentation/stable/](https://networkx.org/documentation/stable/)
+- **Docker:** [https://www.docker.com/](https://www.docker.com/)
 - **Python:** [https://www.python.org/](https://www.python.org/)
 
 ---
 
-## 👥 Equipe do Projeto
+## 👥 Project Team
 
-| Nome | LinkedIn | GitHub |
+| Name | LinkedIn | GitHub |
 |------|-----------|--------|
 | **Pedro Ferreira (.pdf)** | [linkedin.com/in/datadotpdf](https://www.linkedin.com/in/datadotpdf) | [github.com/DATAdotPDF](https://github.com/DATAdotPDF) |
 | **Guilherme Gabriel Souza** | [linkedin.com/in/guilhermegabsouza](https://www.linkedin.com/in/guilhermegabsouza) | [github.com/guigabz](https://github.com/guigabz) |
@@ -164,5 +163,5 @@ reduzindo o tempo de análise manual e aumentando a confiabilidade das auditoria
 
 ---
 
-> Projeto desenvolvido como entrega final do curso de **Engenharia de Dados – DNC School**,  
-> unindo **IA generativa, análise de grafos e automação de dados** em um pipeline integrado.
+> Project developed as the final assignment for the **DNC School Data Engineering course**,
+> combining **generative AI, graph analysis, and data automation** in an integrated pipeline.
